@@ -1,11 +1,11 @@
-#HelloCaesar
+# HelloCaesar
 
 
-##Welcome to web development!
+## Welcome to web development!
 
 Hopefully we've covered the fundementals like variables, data types, functions and loops. It's time to put them into practice!
 
-###Installation and dependencies
+### Installation and dependencies
 
 First things first, let's install all the dependencies. It's standard to list all the python programs you need in a file called 'requirements.txt'. Open it and take a look.
 
@@ -15,13 +15,13 @@ let's go ahead an install Flask by entering this command:
 
 pip3 install -r requirements.txt
 
-###app.py
+### app.py
 
 The important things in app.py are our 2 'routes' (@app.route(Some Url). These tell Flask what to do when users try to access the url in the brackets. Our website has two pages, and thus we have 2 routes
 
 The other main thing is our function called caesar. This is what we want to call to encode the data supplied by the user, using the key the user provides. It's currently unfinished. that's your job!
 
-###templates
+### templates
 
 Hey, there's another folder here called 'templates/'. This folder contains our html or hypertext markup language! HTML tells the user's browser how to format our data. Flask knows to look in our templates folder to retrieve our html
 
@@ -33,7 +33,7 @@ html is fiddly and boring but if you're interested: https://developer.mozilla.or
 
 Now take a look at encrypt.html . Ooh a form! This tells the browser to display a form that the user can enter stuff into, it also tells the users browser where to send that contents of the form when the user hits confirm
 
-###Usage
+### Usage
 
 Tell our OS what our flask app is by entering:
 
@@ -61,7 +61,7 @@ Hello, Caesar!
 
 Your website (or rather 'development server') will keep running as long as you're in your IDE
 
-###TODO
+### TODO
 
 Finish the implementation of the caesar() function to return an encrypted message to the user using their message and key!
 
