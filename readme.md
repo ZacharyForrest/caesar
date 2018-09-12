@@ -45,8 +45,10 @@ to run our app enter:
 
 you should see:
 
- > Serving Flask app "app.py" (lazy loading)
+ > Serving Flask app "app.py"
+
  > Environment: production
+
  > WARNING: Do not use the development server in a production environment.
  > Use a production WSGI server instead.
  > Debug mode: on

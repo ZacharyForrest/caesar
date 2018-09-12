@@ -7,14 +7,11 @@ from flask import Flask, render_template, request, url_for
 
 
 app = Flask(__name__)
-
 app.debug = True
 
 
 @app.route('/')
-
 def index():
-
     return render_template('index.html')
 
 
@@ -27,10 +24,16 @@ def encrypt():
         encryptedmessage = caesar(request.form["message"], request.form['key'])
         return render_template('encrypt.html', encrypted_message=encryptedmessage)
 
+@app.route('/decrypt', methods=['GET', 'POST'])
+def decrypt():
+    return render_template('decrypt.html')
 
-def caesar(message, key):
+
+def encrypt_caesar(message, key):
     #TODO
     pass
 
 
+def decrypt_caesar(message):
+    pass
 
