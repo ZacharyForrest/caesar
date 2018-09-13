@@ -1,5 +1,6 @@
 # HelloCaesar
 
+A flask web app that can encrypt and decrypt messages using the Caesar encyption method - to learn about Caesar encryption take a look athttps://cryptii.com/caesar-cipher
 
 ## Welcome to web development!
 
@@ -19,8 +20,7 @@ pip3 install -r requirements.txt
 
 The important things in app.py are our 2 'routes' (@app.route(Some Url). These tell Flask what to do when users try to access the url in the brackets. Our website has two pages, and thus we have 2 routes
 
-The other main thing is our function called caesar. This is what we want to call to encode the data supplied by the user, using the key the user provides. It's currently unfinished. that's your job!
-
+Then we've got 2 functions that look a bit unfinished! That's your job!
 ### templates
 
 Hey, there's another folder here called 'templates/'. This folder contains our html or hypertext markup language! HTML tells the user's browser how to format our data. Flask knows to look in our templates folder to retrieve our html

@@ -21,7 +21,7 @@ def encrypt():
         return render_template('encrypt.html')
     #if the user POSTs us some data, let's encrypt it and return the encryptedmessage!
     elif request.method == 'POST':
-        encryptedmessage = caesar(request.form["message"], request.form['key'])
+        encryptedmessage = encrypt_caesar(request.form["message"], request.form['key'])
         return render_template('encrypt.html', encrypted_message=encryptedmessage)
 
 @app.route('/decrypt', methods=['GET', 'POST'])
@@ -31,9 +31,10 @@ def decrypt():
 
 def encrypt_caesar(message, key):
     #TODO
-    pass
+    return
 
 
 def decrypt_caesar(message):
-    pass
+    #TODO
+    return
 
