@@ -38,10 +38,10 @@ def decrypt():
 #function to encrypt users message using key provided
 def encrypt_caesar(message, key):
     #TODO
-    return
+    return 0
 
 #function to decrypt a message
 def decrypt_caesar(message):
     #TODO
-    return
+    return 0
 

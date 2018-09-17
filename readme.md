@@ -14,24 +14,40 @@ Just one thing listed - Flask. Flask is a 'web framework' - basically a bunch of
 
 let's go ahead an install Flask by entering this command:
 
-pip3 install -r requirements.txt
+>> pip3 install -r requirements.txt
 
 ### app.py
 
-The important things in app.py are our 2 'routes' (@app.route(Some Url). These tell Flask what to do when users try to access the url in the brackets. Our website has two pages, and thus we have 2 routes
+The important things in app.py are our 3 'routes' (@app.route(Some Url). These tell Flask what to do when users try to access the url we pass in as a parameter.
 
-Then we've got 2 functions that look a bit unfinished! That's your job!
+Our website has 3 pages, and thus we have 3 routes:
+
+>> @app.route('/')
+
+>> @app.route('/encrypt', methods=['GET', 'POST'])
+
+>> @app.route('/decrypt', methods=['GET', 'POST'])
+
+This weird @app.route() syntax is a 'decorator'. Basically it adds functionality to the functions defined beneath.
+
+Then we've got 2 functions called encrypt_caesar and decrypt_caesar that look a bit unfinished! That's your job!
+
+### helpers.py
+
+Just two helper functions here that remove any potentially malicious inputs and convert the users key into an integer. Nothing to worry about here.
+
+
 ### templates
 
 Hey, there's another folder here called 'templates/'. This folder contains our html or hypertext markup language! HTML tells the user's browser how to format our data. Flask knows to look in our templates folder to retrieve our html
 
 Take a look at index.html - this is our welcome page.
 
-The tags for example <html> tell the browser how to treat the contents within the tags e.g <p> treat me like a paragraph! </p>
+The tags for example \<html> tell the browser how to treat the contents within the tags e.g \<p> treat me like a paragraph! \</p>
 
 html is fiddly and boring but if you're interested: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
 
-Now take a look at encrypt.html . Ooh a form! This tells the browser to display a form that the user can enter stuff into, it also tells the users browser where to send that contents of the form when the user hits confirm
+Now take a look at encrypt.html . This tells the browser to display a form that the user can enter stuff into, it also tells the users browser where to send that contents of the form when the user hits confirm
 
 ### Usage
 
@@ -61,7 +77,7 @@ open the  link httpL//ide50 blah blah in your browser
 
 Hello, Caesar!
 
-Your website (or rather 'development server') will keep running as long as you're in your IDE
+Your website (or rather 'development server') will keep running as long as you're in your IDE. Hit ctrl-c to turn off the server.
 
 ### TODO
 
