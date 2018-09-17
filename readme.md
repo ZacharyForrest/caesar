@@ -16,17 +16,19 @@ let's go ahead an install Flask by entering this command:
 
 >> pip3 install -r requirements.txt
 
+Okay, now let's look at the code!
+
 ### app.py
 
 The important things in app.py are our 3 'routes' (@app.route(Some Url). These tell Flask what to do when users try to access the url we pass in as a parameter.
 
 Our website has 3 pages, and thus we have 3 routes:
 
->> @app.route('/')
+> @app.route('/')
 
->> @app.route('/encrypt', methods=['GET', 'POST'])
+> @app.route('/encrypt', methods=['GET', 'POST'])
 
->> @app.route('/decrypt', methods=['GET', 'POST'])
+> @app.route('/decrypt', methods=['GET', 'POST'])
 
 This weird @app.route() syntax is a 'decorator'. Basically it adds functionality to the functions defined beneath.
 
