@@ -1,10 +1,10 @@
 # HelloCaesar
 
-A flask web app that can encrypt and decrypt messages using the Caesar encyption method - to learn about Caesar encryption take a look athttps://cryptii.com/caesar-cipher
+A flask web app that can encrypt and decrypt messages using the Caesar encryption method - to learn about Caesar encryption take a look at [https://cryptii.com/caesar-cipher](https://cryptii.com/caesar-cipher)
 
 ## Welcome to web development!
 
-Hopefully we've covered the fundementals like variables, data types, functions and loops. It's time to put them into practice!
+Hopefully we've covered the fundamentals like variables, data types, functions and loops. It's time to put them into practice!
 
 ### Installation and dependencies
 
@@ -37,7 +37,7 @@ Now take a look at encrypt.html . Ooh a form! This tells the browser to display 
 
 Tell our OS what our flask app is by entering:
 
-> EXPORT FLASK_APP=app.py
+> FLASK_APP=app.py
 
 to run our app enter:
 
