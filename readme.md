@@ -38,7 +38,7 @@ Now take a look at encrypt.html . Ooh a form! This tells the browser to display 
 
 Tell our OS what our flask app is by entering:
 
-`EXPORT FLASK_APP=app.py`
+`export FLASK_APP=app.py`
 
 to run our app enter:
 
